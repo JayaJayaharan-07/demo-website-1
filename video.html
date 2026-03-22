@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+     
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+
+
+   
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav">
+            <div class="logo">
+        
+                <span class="gradient-text">  <i class="fa-solid fa-circle-play"></i> Project Videos </span>
+            </div>
+
+            <ul class="menu" id="menu" style="display: none;">
+                <li> <a href="#home"> HOME </a> </li>
+                <li> <a href="#skills"> SKILLS </a> </li>
+                <li> <a href="#projects"> PROJECTS</a> </li>
+                <li> <a href="#about-section"> ABOUT ME </a> </li>
+                <li> <a href="#Experience"> EXPERIENCE</a> </li>
+                <li> <a href="#contact"> CONTACT ME </a> </li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="index.html" class="btn primary"> <i class="fa-solid fa-backward fa-fade"></i> Back</a>
+                
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="section-label">  <i class="fa-solid fa-circle-play"></i> Project Showcase</div>
+        <h1>
+          These projects reflect my ability to<br>
+          design, develop, and deliver<br>
+          real-world applications.
+        </h1>
+        <p>Each video demonstrates a fully responsive, interactive, and modern web experience built for real users.</p>
+      </div>
+
+      <div class="hero-count">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10
+                   10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
+        </svg>
+        10+ Projects
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ DIVIDER ══ -->
+  <div class="divider"><hr/></div>
+
+  <!-- ══ VIDEO GRID (populated by script.js) ══ -->
+  <div class="grid" id="videoGrid"></div>
+
+  <!-- ══ VIDEO MODAL ══ -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+
+      <!-- Browser chrome -->
+      <div class="modal-browser">
+        <div class="b-dot r"></div>
+        <div class="b-dot y"></div>
+        <div class="b-dot g"></div>
+        <div class="modal-url" id="modalUrl">https://</div>
+      </div>
+
+      <!-- Video player -->
+      <video id="modalVideo" controls></video>
+
+      <!-- Info + close -->
+      <div class="modal-info">
+        <div>
+          <div class="modal-title" id="modalTitle"></div>
+          <div class="modal-desc"  id="modalDesc"></div>
+        </div>
+        <button class="modal-close" id="modalClose">✕</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══ TOAST NOTIFICATION ══ -->
+  <div id="toast">🔗 Link copied!</div>
+
+  <!--footer-->
+    <footer class="footer" style="margin-top: 50px;">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <div class="logo">
+                    <i class="fa-solid fa-circle-user fa-fade"></i>
+                    <span> JAYA JAYA HARAN </span>
+                </div>
+                <br/>
+                <p>
+                    Dedicated to building modern, responsive, and user-friendly digital experiences 
+                    using the latest technologies in web development
+                    and artificial intelligence.
+                </p>
+
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/jayajayaharan07/" target=""> <i class="bx bxl-linkedin" alt="LinkedIn"> </i> </a>
+                    <a href="https://www.instagram.com/jayajayaharan/" target=""> <i class="bx bxl-instagram" alt> </i></a>
+                    <a href="https://wa.me/919344349881"><i class="bx bxl-whatsapp"> </i> </a>
+                    <a href="#"><i class="bx bxl-telegram"> </i></a>
+                </div>
+
+            </div>
+
+            <div class="footer-col">
+                <h4> Contact Details </h4>
+                <div class="info">
+                    <div class="footerIcon">
+                        <i class="bx bxs-phone"></i>
+                    </div>
+                    <div>
+                        <span>Call Me </span>
+                        <p>(+91) 9344349881</p>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <div class="footerIcon">
+                        <i class="bx bxl-gmail"></i>
+                    </div>
+                    <div>
+                        <span> Email ID</span>
+                        <p>jayajayaharan77@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <div class="footerIcon">
+                        <i class="bx bxs-map"></i>
+                    </div>
+                    <div>
+                        <span>My location </span>
+                        <p> No.30, Sivaperumal nagar, mettupatti<br/> Dindigul, Tamilnadu.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4> Share your thoughts </h4>
+                <p> Fell free to share your thoughts.
+                </p>
+                <div class="newsletter">
+                    <input type="email" placeholder="Message">
+                    <button><i class="bx bxs-send"></i></button>
+                </div>
+                <div class="note">
+                    Let us know your feedback.
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4> Follow Me </h4>
+                <div class="insta-grid">
+                    <a href="https://www.linkedin.com/in/jayajayaharan07/" target=""> <img src="image/image/linkedin.png" alt="LinkedIn"> </a>
+                    <a href=""> <img src="image/image/github.png"> </a>
+                    <a href="https://www.instagram.com/jayajayaharan/" target=""> <img src="image/image/instagram.png" alt="Instagram"></a>
+                    <a href="#"> <img src="image/image/youtube.png"> </a>
+                    <a href="https://wa.me/919344349881" target=""> <img src="image/image/whatsapp.png" alt="Whatsapp"> </a>
+                    <a href="#"> <img src="image/image/telegram.png"> </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            JAYA JAYA HARAN M. - © 2026 All right reserved
+        </div>
+        <a class="scroll-top" href="#top"> 
+            <i class="bx bx-chevron-up"></i>
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>    
